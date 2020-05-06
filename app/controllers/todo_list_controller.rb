@@ -12,5 +12,6 @@ class TodoListController < ApplicationController
     end
 
     def create
+        @todo_list = TodoList.create todo_list_params
     end
 end
