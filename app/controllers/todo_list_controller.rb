@@ -15,9 +15,14 @@ class TodoListController < ApplicationController
         @todo_list = TodoList.create todo_list_params
     end
 
+    def edit
+      @todo_list = TodoList.find(params[:id])
+    end
+
     private
 
     def todo_list_params
-        params.require(:todo).permit(:title, :description)
+        params.require(:todo_list).permit(:title, :description)
+        redirect_to todo_list_path(@todo_list)
     end
 end

@@ -1,5 +1,7 @@
 <h1> Index Page! </h1>
 
+<%= link_to "New Todo Item", new_todo_list_path %>
+
 <% @todo_list.each do |todo_list| %>
     <li><%= link_to todo_list.title, todo_list_path(todo_list.id)%></li>
 <% end %>
