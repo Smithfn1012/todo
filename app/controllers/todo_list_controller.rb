@@ -1,5 +1,8 @@
 class TodoListController < ApplicationController
     def show
-        erb :index
+        erb :show
+    end
+
+    def index
     end
 end
