@@ -6,8 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-todos = Todo.create([
-  {title: "Buy Groceries", description: "Go to Safeway, don't forget the coupons."},
+todo_list = TodoList.create(
+    [{title: "Buy Groceries", description: "Go to Safeway, don't forget the coupons."},
 
   {title: "Wash the Car", description: "Have a date this Saturday."},
 
