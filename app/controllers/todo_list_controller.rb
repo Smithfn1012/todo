@@ -10,4 +10,7 @@ class TodoListController < ApplicationController
     def new
         @todo_list = TodoList.new
     end
+
+    def create
+    end
 end
