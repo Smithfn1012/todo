@@ -6,5 +6,6 @@
     <li>
       <%= link_to todo_list.title, todo_list_path(todo_list.id) %>
       <%= link_to "edit", edit_todo_list_path(todo_list[:id]) %>
+      <%= link_to "delete", todo_list, method: :delete, data: { confirm: "You sure?" } %>
     </li>
 <% end %>
