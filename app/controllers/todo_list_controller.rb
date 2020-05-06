@@ -4,5 +4,6 @@ class TodoListController < ApplicationController
     end
 
     def show
+        @todo_list = TodoList(params[:id])
     end
 end
