@@ -14,4 +14,10 @@ class TodoListController < ApplicationController
     def create
         @todo_list = TodoList.create todo_list_params
     end
+
+    private
+
+    def todo_list_params
+        params.require(:todo).permit(:title, :description)
+    end
 end
