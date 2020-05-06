@@ -1,5 +1,5 @@
-<h1> Todo List </h1>
+<h1> Index Page! </h1>
 
-<h3> Title Description </h3>
-
-<h4> New Todo List </h4>
+<% @todo_lists.each do |todo_list| %>
+    <li><%=todo_list.title%></li>
+<% end %>
