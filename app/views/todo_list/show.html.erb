@@ -1,5 +1,12 @@
 <h1>Todo List Show Page</h1>
-<p>Title: <%= @todo_list['title']%></p>
-<p>Description: <%= @todo_list['description']%></p>
-
-<%= link_to "Back To Todo List", root_path%>
+<p id="notice"><%= notice %></p>
+<p>
+  <strong>Title:</strong>
+  <%= @todo_list.title %>
+</p>
+<p>
+  <strong>Description:</strong>
+  <%= @todo_list.description %>
+</p>
+<%= link_to 'Edit', edit_todo_list_path(@todo_list) %> |
+<%= link_to 'Back', todo_lists_path %>
