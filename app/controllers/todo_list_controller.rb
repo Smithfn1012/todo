@@ -21,7 +21,7 @@ class TodoListController < ApplicationController
 
     def update
         @todo_list = TodoList.find(params[:id])
-        @todo_list.update todo_list_params
+        @todo_list.update(params.require(:todo_list).permit(:title, :description))
         redirect_to todo_list_path(@todo_list)
     end
 
