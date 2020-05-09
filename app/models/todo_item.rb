@@ -2,6 +2,6 @@ class TodoItem < ApplicationRecord
   belongs_to :todo_list
 
   def completed?
-    !completed?_at.blank?
+    !completed_at.blank?
   end
 end
